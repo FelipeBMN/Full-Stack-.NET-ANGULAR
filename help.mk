@@ -7,3 +7,9 @@ Instalando:
 
     Node:
      Recomended for most users
+    
+Make globaljson file:
+    dotnet new globaljson --sdk-version 5.0.2
+
+Criando Projeto:
+    dotnet new -n <name.API>
