@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using dotnetWebApi.API.Data;
 using dotnetWebApi.API.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -32,17 +33,22 @@ namespace dotnetWebApi.API.Controllers
                     ImagemURL = "Foto.png"
                 }
            };
+        private readonly DataContext context;
+        
+        public EventController(DataContext context){
+            this.context = context;
+        }
 
         [HttpGet]
         public IEnumerable<Event> Get()
         {
-            return _event;
+            return this.context.Events;
         }
 
         [HttpGet("{id}")]
-        public IEnumerable<Event> GetById(int id)
+        public Event GetById(int id)
         {
-            return _event.Where(evento => evento.EventId == id);
+            return this.context.Events.FirstOrDefault(evento => evento.EventId == id);
         }
 
         [HttpPost]

@@ -8,8 +8,8 @@ using dotnetWebApi.API.Data;
 namespace dotnetWebApi.API.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20220706041835_Inital")]
-    partial class Inital
+    [Migration("20220706142835_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
