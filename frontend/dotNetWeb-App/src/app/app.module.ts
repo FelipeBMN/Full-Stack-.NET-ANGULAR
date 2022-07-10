@@ -13,6 +13,7 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { CollapseModule } from 'ngx-bootstrap/collapse'
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -32,7 +33,8 @@ import { CollapseModule } from 'ngx-bootstrap/collapse'
     TooltipModule,
     ModalModule,
     BrowserAnimationsModule,
-    CollapseModule,
+    CollapseModule.forRoot(),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

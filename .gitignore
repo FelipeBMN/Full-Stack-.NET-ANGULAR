@@ -499,3 +499,10 @@ $RECYCLE.BIN/
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+
+## Db files
+
+*.db
+*.db-shm
+*.db-wal

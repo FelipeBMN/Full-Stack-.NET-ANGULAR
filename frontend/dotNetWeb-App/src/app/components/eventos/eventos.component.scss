@@ -1,0 +1,27 @@
+@btn {}
+
+.button_btn {
+  font-weight: bold;
+  border: 0;
+}
+
+table thead th {
+  vertical-align: middle;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.local {
+  max-width: 300px;
+}
+
+.options {
+  button {
+    margin-right: 5px;
+  }
+}
